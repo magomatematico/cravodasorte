@@ -30,21 +30,42 @@
         .partner-message {
             text-align: center;
             font-family: Arial, sans-serif;
-            font-size: 18px;
-            margin: 20px 0;
+            font-size: 16px;
+            margin: 10px 0;
             color: #fff;
             z-index: 1001;
             position: relative;
-            background: transparent; /* Fundo transparente */
+            background: #000;
+            padding: 8px 0;
+        }
+        .button-container {
+            text-align: center; /* Garante centralização do botão */
+            margin: 5px 0;
+        }
+        .partner-link {
+            display: inline-flex; /* Ajusta ao tamanho do conteúdo */
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background: #222; /* Fundo escuro para o botão */
+            border: 2px solid #fff; /* Borda branca para destaque */
+            border-radius: 8px; /* Bordas arredondadas para parecer um botão */
+            padding: 6px 10px; /* Padding reduzido para ajustar a largura */
+            transition: background 0.2s, transform 0.2s;
+        }
+        .partner-link:hover {
+            background: #444; /* Fundo mais claro no hover */
+            transform: scale(1.05); /* Leve aumento no hover */
         }
         .partner-icon {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            transition: transform 0.2s;
+            width: 100px; /* Tamanho do ícone */
+            margin-left: 8px; /* Espaço entre texto e ícone */
         }
-        .partner-icon:hover {
-            transform: scale(1.1);
+        .click-text {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #ffd700; /* Cor amarela para destaque */
+            font-weight: bold; /* Negrito para maior destaque */
         }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJJT9YTKZ0"></script>
@@ -57,11 +78,14 @@
 </head>
 <body>
     <div class="partner-message">
-        Nosso site encontra-se com estabilidade, acesse nosso site parceiro enquanto corrigimos o problema:
+        AVISO: nosso site encontra-se com uma estabilidade, acesse nosso site parceiro enquanto corrigimos o problema
     </div>
-    <a href="https://www.aguiaoficialbet.com/" target="_blank">
-        <img src="https://trivo-assets.pages.dev/images/aguiaoficial.png" alt="Águia Oficial" class="partner-icon">
-    </a>
+    <div class="button-container">
+        <a href="https://www.aguiaoficialbet.com/" target="_blank" class="partner-link">
+            <span class="click-text">Clique aqui</span>
+            <img src="https://trivo-assets.pages.dev/images/aguiaoficial.png" alt="Águia Oficial" class="partner-icon">
+        </a>
+    </div>
     <iframe src="https://app.cravopro.online/pr/yGJafMYP" allowfullscreen></iframe>
 </body>
 </html>
